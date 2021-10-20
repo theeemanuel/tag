@@ -18,7 +18,7 @@ startPos = pygame.image.load('images/standing.png')
 
 #texts
 white = (255, 255, 255)
-font = pygame.font.SysFont("comicsans", 48)
+font = pygame.font.SysFont("comicsans", 32)
 starttext = font.render("Press 'space' to start!", True, white, (0,0,0))
 endtext = font.render("TAGGED!", True, (0,0,0))
 endsubtext = font.render("Press 'space' to replay!", True, white, (0,0,0))
@@ -239,7 +239,7 @@ while end:
         rerun(p, run)
     else:
         win.blit(bg, (0, 0))
-        win.blit(endtext,(80, 185)) 
+        win.blit(endtext,(80, 175)) 
         win.blit(endsubtext,(80, 215))
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
